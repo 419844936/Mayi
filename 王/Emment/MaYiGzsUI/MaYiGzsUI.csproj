@@ -1,0 +1,495 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{43E209F4-DE0C-4D78-B5BF-DDF9670AF68F}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MaYiGzsUI</RootNamespace>
+    <AssemblyName>MaYiGzsUI</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <Use64BitIISExpress>false</Use64BitIISExpress>
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ComRegister.aspx" />
+    <Content Include="css\jquery-ui-1.10.4.custom.min.css" />
+    <Content Include="css\jqzoom.css" />
+    <Content Include="css\layout.css" />
+    <Content Include="css\nf.lightbox.css" />
+    <Content Include="data\document.js" />
+    <Content Include="data\styles.css" />
+    <Content Include="files\公司注册\data.js" />
+    <Content Include="files\公司注册\styles.css" />
+    <Content Include="files\公司页面\data.js" />
+    <Content Include="files\公司页面\styles.css" />
+    <Content Include="files\关于我们\data.js" />
+    <Content Include="files\关于我们\styles.css" />
+    <Content Include="files\我的蚂蚁\data.js" />
+    <Content Include="files\我的蚂蚁\styles.css" />
+    <Content Include="files\我要招聘\data.js" />
+    <Content Include="files\我要招聘\styles.css" />
+    <Content Include="files\我要求职\data.js" />
+    <Content Include="files\我要求职\styles.css" />
+    <Content Include="files\求职档案\data.js" />
+    <Content Include="files\求职档案\styles.css" />
+    <Content Include="files\注册\data.js" />
+    <Content Include="files\注册\styles.css" />
+    <Content Include="files\登录\data.js" />
+    <Content Include="files\登录\styles.css" />
+    <Content Include="files\职位\data.js" />
+    <Content Include="files\职位\styles.css" />
+    <Content Include="files\首页\data.js" />
+    <Content Include="files\首页\styles.css" />
+    <Content Include="images\BGM\88F3D48F54D5F4C7EA879455E7426CF0.jpg" />
+    <Content Include="images\BGM\A694E0411E11FA1BCC74FE4168D5E77A.jpg" />
+    <Content Include="images\BGM\CDA6A3270AF44745068B1B6865B9FFFE.jpg" />
+    <Content Include="images\BGM\E78B38985836CD325B48643B1DE1A17F.jpg" />
+    <Content Include="images\BGM\img-3b51de7f61367e4dce4535109d22176e.jpg" />
+    <Content Include="images\BGM\img-598c4d8a0ca9657cb43e06fe5bd5b6e1.jpg" />
+    <Content Include="images\BGM\img-6f3393adaf746792b6e8b1fbb06e2724.jpg" />
+    <Content Include="images\BGM\img-7f1b93e00294aed8bed741f9d212204b.jpg" />
+    <Content Include="images\BGM\img-aa589116eca9b51d6487b6ec13c85917.jpg" />
+    <Content Include="images\BGM\img-d880b366d7446fe7f83a5e0043f04e9d.jpg" />
+    <Content Include="images\BGM\捕获.PNG" />
+    <Content Include="images\BGM\新建文件夹256299103.jpg" />
+    <Content Include="images\公司注册\u150.png" />
+    <Content Include="images\公司注册\u153.png" />
+    <Content Include="images\公司注册\u168.png" />
+    <Content Include="images\关于我们\u154.png" />
+    <Content Include="images\关于我们\u157.png" />
+    <Content Include="images\关于我们\u179.png" />
+    <Content Include="images\关于我们\u182.png" />
+    <Content Include="images\我要招聘\u283.png" />
+    <Content Include="images\我要招聘\u287.png" />
+    <Content Include="images\我要招聘\u291.png" />
+    <Content Include="images\我要招聘\u295.png" />
+    <Content Include="images\我要招聘\u304.png" />
+    <Content Include="images\我要招聘\u306.png" />
+    <Content Include="images\我要招聘\u308.png" />
+    <Content Include="images\我要招聘\u309.png" />
+    <Content Include="images\我要招聘\u310.png" />
+    <Content Include="images\我要招聘\u311.png" />
+    <Content Include="images\我要招聘\u312.png" />
+    <Content Include="images\我要招聘\u319.png" />
+    <Content Include="images\我要招聘\u322.png" />
+    <Content Include="images\我要招聘\u323.png" />
+    <Content Include="images\我要招聘\u324.png" />
+    <Content Include="images\我要招聘\u325.png" />
+    <Content Include="images\我要招聘\u326.png" />
+    <Content Include="images\我要求职\u169.png" />
+    <Content Include="images\我要求职\u174.png" />
+    <Content Include="images\我要求职\u174_selected.png" />
+    <Content Include="images\我要求职\u194.png" />
+    <Content Include="images\我要求职\u199.png" />
+    <Content Include="images\我要求职\u199_selected.png" />
+    <Content Include="images\我要求职\u204.png" />
+    <Content Include="images\我要求职\u217.png" />
+    <Content Include="images\我要求职\u266.png" />
+    <Content Include="images\我要求职\u267.png" />
+    <Content Include="images\我要求职\u270.png" />
+    <Content Include="images\我要求职\u271.png" />
+    <Content Include="images\我要求职\u272.png" />
+    <Content Include="images\我要求职\u273.png" />
+    <Content Include="images\我要求职\u274.png" />
+    <Content Include="images\我要求职\u275.png" />
+    <Content Include="images\我要求职\u276.png" />
+    <Content Include="images\我要求职\u277.png" />
+    <Content Include="images\求职档案\u434.png" />
+    <Content Include="images\求职档案\u442.png" />
+    <Content Include="images\求职档案\u443.png" />
+    <Content Include="images\求职档案\u444.png" />
+    <Content Include="images\求职档案\u445.png" />
+    <Content Include="images\求职档案\u446.png" />
+    <Content Include="images\求职档案\u454.png" />
+    <Content Include="images\求职档案\u457.png" />
+    <Content Include="images\求职档案\u467.png" />
+    <Content Include="images\求职档案\u512.png" />
+    <Content Include="images\求职档案\u513.png" />
+    <Content Include="images\求职档案\u514.png" />
+    <Content Include="images\求职档案\u515.png" />
+    <Content Include="images\求职档案\u516.png" />
+    <Content Include="images\登录\u111.png" />
+    <Content Include="images\职位\u420.png" />
+    <Content Include="images\职位\u421.png" />
+    <Content Include="images\职位\u422.png" />
+    <Content Include="images\职位\u423.png" />
+    <Content Include="images\职位\u424.png" />
+    <Content Include="images\职位\u425.png" />
+    <Content Include="images\首页\img1 %281%29.png" />
+    <Content Include="images\首页\img1 %282%29.png" />
+    <Content Include="images\首页\img1 %283%29.png" />
+    <Content Include="images\首页\u0.png" />
+    <Content Include="images\首页\u4.png" />
+    <Content Include="images\首页\u5.png" />
+    <Content Include="images\首页\u54.png" />
+    <Content Include="images\首页\u55.png" />
+    <Content Include="images\首页\u56.png" />
+    <Content Include="images\首页\u6.png" />
+    <Content Include="images\首页\u60.gif" />
+    <Content Include="images\首页\u61.gif" />
+    <Content Include="images\首页\u62.gif" />
+    <Content Include="images\首页\u63.gif" />
+    <Content Include="images\首页\u64.gif" />
+    <Content Include="images\首页\u65.gif" />
+    <Content Include="images\首页\u66.gif" />
+    <Content Include="images\首页\u67.gif" />
+    <Content Include="images\首页\u68.gif" />
+    <Content Include="images\首页\u69.gif" />
+    <Content Include="images\首页\u7.png" />
+    <Content Include="images\首页\u70.gif" />
+    <Content Include="images\首页\u8.png" />
+    <Content Include="images\首页\u86.png" />
+    <Content Include="images\首页\u87.png" />
+    <Content Include="Job.aspx" />
+    <Content Include="js\jquery-1.11.0.min.js" />
+    <Content Include="js\jquery-1.3.2.min.js" />
+    <Content Include="js\jquery-ui-1.10.4.custom.min.js" />
+    <Content Include="js\jquery.jqzoom1.0.1.js" />
+    <Content Include="js\jqzoom.pack.1.0.1.js" />
+    <Content Include="js\NFLightBox.js" />
+    <Content Include="obj\Debug\MaYi.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\MaYi.dll" />
+    <Content Include="obj\Debug\MaYi.pdb" />
+    <Content Include="plugins\debug\styles\debug.css" />
+    <Content Include="plugins\debug\styles\images\variables_hover.png" />
+    <Content Include="plugins\debug\styles\images\variables_off.png" />
+    <Content Include="plugins\debug\styles\images\variables_on.png" />
+    <Content Include="plugins\page_notes\styles\images\back.png" />
+    <Content Include="plugins\page_notes\styles\images\back_hover.png" />
+    <Content Include="plugins\page_notes\styles\images\footnotes.png" />
+    <Content Include="plugins\page_notes\styles\images\footnotes_hover.png" />
+    <Content Include="plugins\page_notes\styles\images\footnotes_on.png" />
+    <Content Include="plugins\page_notes\styles\images\forward.png" />
+    <Content Include="plugins\page_notes\styles\images\forward_hover.png" />
+    <Content Include="plugins\page_notes\styles\images\notes_hover.png" />
+    <Content Include="plugins\page_notes\styles\images\notes_off.png" />
+    <Content Include="plugins\page_notes\styles\images\notes_on.png" />
+    <Content Include="plugins\page_notes\styles\page_notes.css" />
+    <Content Include="plugins\recordplay\recordplay.js" />
+    <Content Include="plugins\recordplay\styles\recordplay.css" />
+    <Content Include="plugins\sitemap\styles\images\079_page_16.png" />
+    <Content Include="plugins\sitemap\styles\images\086_case_16.png" />
+    <Content Include="plugins\sitemap\styles\images\225_responsive_16.png" />
+    <Content Include="plugins\sitemap\styles\images\228_togglenotes_16.png" />
+    <Content Include="plugins\sitemap\styles\images\229_variables_16.png" />
+    <Content Include="plugins\sitemap\styles\images\231_event_16.png" />
+    <Content Include="plugins\sitemap\styles\images\232_search_16.png" />
+    <Content Include="plugins\sitemap\styles\images\233_hyperlink_16.png" />
+    <Content Include="plugins\sitemap\styles\images\235_folderclosed_16.png" />
+    <Content Include="plugins\sitemap\styles\images\236_folderopen_16.png" />
+    <Content Include="plugins\sitemap\styles\images\adaptivecheck.png" />
+    <Content Include="plugins\sitemap\styles\images\flow.png" />
+    <Content Include="plugins\sitemap\styles\images\folder_closed.png" />
+    <Content Include="plugins\sitemap\styles\images\folder_open.png" />
+    <Content Include="plugins\sitemap\styles\images\hotspots.png" />
+    <Content Include="plugins\sitemap\styles\images\hotspots_hover.png" />
+    <Content Include="plugins\sitemap\styles\images\hotspots_on.png" />
+    <Content Include="plugins\sitemap\styles\images\images.html" />
+    <Content Include="plugins\sitemap\styles\images\minus.gif" />
+    <Content Include="plugins\sitemap\styles\images\note.png" />
+    <Content Include="plugins\sitemap\styles\images\page.png" />
+    <Content Include="plugins\sitemap\styles\images\plus.gif" />
+    <Content Include="plugins\sitemap\styles\images\share.png" />
+    <Content Include="plugins\sitemap\styles\images\share_hover.png" />
+    <Content Include="plugins\sitemap\styles\images\share_on.png" />
+    <Content Include="plugins\sitemap\styles\images\sitemap_hover.png" />
+    <Content Include="plugins\sitemap\styles\images\sitemap_off.png" />
+    <Content Include="plugins\sitemap\styles\images\sitemap_on.png" />
+    <Content Include="plugins\sitemap\styles\images\views.png" />
+    <Content Include="plugins\sitemap\styles\images\views_hover.png" />
+    <Content Include="plugins\sitemap\styles\images\views_on.png" />
+    <Content Include="plugins\sitemap\styles\sitemap.css" />
+    <Content Include="resources\chrome\allow_access.gif" />
+    <Content Include="resources\chrome\axure_logo.gif" />
+    <Content Include="resources\chrome\axure_logo.png" />
+    <Content Include="resources\chrome\chrome.html" />
+    <Content Include="resources\chrome\extensions_menu.gif" />
+    <Content Include="resources\chrome\safari.html" />
+    <Content Include="resources\chrome\safari_advanced.png" />
+    <Content Include="resources\chrome\safari_restrictions.png" />
+    <Content Include="resources\chrome\splitter.gif" />
+    <Content Include="resources\chrome\splitter.png" />
+    <Content Include="resources\css\axure_rp_page.css" />
+    <Content Include="resources\css\default.css" />
+    <Content Include="resources\css\images\images.html" />
+    <Content Include="resources\css\images\newwindow.gif" />
+    <Content Include="resources\css\images\note.gif" />
+    <Content Include="resources\css\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="resources\css\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="resources\css\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="resources\css\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="resources\css\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="resources\css\images\ui-bg_glass_75_ffffff_1x400.png" />
+    <Content Include="resources\css\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="resources\css\images\ui-bg_inset-soft_95_fef1ec_1x100.png" />
+    <Content Include="resources\css\images\ui-icons_222222_256x240.png" />
+    <Content Include="resources\css\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="resources\css\images\ui-icons_454545_256x240.png" />
+    <Content Include="resources\css\images\ui-icons_888888_256x240.png" />
+    <Content Include="resources\css\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="resources\css\jquery-ui-themes.css" />
+    <Content Include="resources\css\reset.css" />
+    <Content Include="resources\expand.html" />
+    <Content Include="resources\images\259_close_12rollover1.png" />
+    <Content Include="resources\images\259_close_12rollover2.png" />
+    <Content Include="resources\images\260_collapse_12rollover1.png" />
+    <Content Include="resources\images\260_collapse_12rollover2.png" />
+    <Content Include="resources\images\261_expand_12rollover1.png" />
+    <Content Include="resources\images\261_expand_12rollover2.png" />
+    <Content Include="resources\images\close.png" />
+    <Content Include="resources\images\close_hover.png" />
+    <Content Include="resources\images\divider.png" />
+    <Content Include="resources\images\expand.png" />
+    <Content Include="resources\images\expand_hover.png" />
+    <Content Include="resources\images\images.html" />
+    <Content Include="resources\images\transparent.gif" />
+    <Content Include="resources\Other.html" />
+    <Content Include="resources\reload.html" />
+    <Content Include="resources\scripts\jquery-1.7.1.min.js" />
+    <Content Include="resources\scripts\jquery-ui-1.8.10.custom.min.js" />
+    <Content Include="resources\scripts\messagecenter.js" />
+    <Content Include="resources\scripts\player\axplayer.js" />
+    <Content Include="resources\scripts\player\splitter.js" />
+    <Content Include="resources\scripts\prototypePost.js" />
+    <Content Include="resources\scripts\prototypePre.js" />
+    <Content Include="resources\scripts\startPost.js" />
+    <Content Include="resources\scripts\startPre.js" />
+    <Content Include="ShouYeNew.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="ZhaoPin.aspx" />
+    <Content Include="公司页面.aspx" />
+    <Content Include="关于我们.aspx" />
+    <Content Include="我的求职.aspx" />
+    <Content Include="我要招聘.aspx" />
+    <Content Include="求职档案.aspx" />
+    <Content Include="Register.aspx" />
+    <Content Include="Login.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ComRegister.aspx.cs">
+      <DependentUpon>ComRegister.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ComRegister.aspx.designer.cs">
+      <DependentUpon>ComRegister.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Job.aspx.cs">
+      <DependentUpon>Job.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Job.aspx.designer.cs">
+      <DependentUpon>Job.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShouYeNew.aspx.cs">
+      <DependentUpon>ShouYeNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShouYeNew.aspx.designer.cs">
+      <DependentUpon>ShouYeNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ZhaoPin.aspx.cs">
+      <DependentUpon>ZhaoPin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ZhaoPin.aspx.designer.cs">
+      <DependentUpon>ZhaoPin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="公司页面.aspx.cs">
+      <DependentUpon>公司页面.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="公司页面.aspx.designer.cs">
+      <DependentUpon>公司页面.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="关于我们.aspx.cs">
+      <DependentUpon>关于我们.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="关于我们.aspx.designer.cs">
+      <DependentUpon>关于我们.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="我的求职.aspx.cs">
+      <DependentUpon>我的求职.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="我的求职.aspx.designer.cs">
+      <DependentUpon>我的求职.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="我要招聘.aspx.cs">
+      <DependentUpon>我要招聘.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="我要招聘.aspx.designer.cs">
+      <DependentUpon>我要招聘.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="求职档案.aspx.cs">
+      <DependentUpon>求职档案.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="求职档案.aspx.designer.cs">
+      <DependentUpon>求职档案.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <Content Include="obj\Debug\MaYi.csprojResolveAssemblyReference.cache" />
+    <Content Include="plugins\debug\styles\images\reset.svg" />
+    <Content Include="plugins\debug\styles\images\reset_hover.svg" />
+    <Content Include="plugins\debug\styles\images\variables_hover.svg" />
+    <Content Include="plugins\debug\styles\images\variables_off.svg" />
+    <Content Include="plugins\debug\styles\images\variables_on.svg" />
+    <Content Include="plugins\page_notes\styles\images\back.svg" />
+    <Content Include="plugins\page_notes\styles\images\back_hover.svg" />
+    <Content Include="plugins\page_notes\styles\images\footnotes.svg" />
+    <Content Include="plugins\page_notes\styles\images\footnotes_hover.svg" />
+    <Content Include="plugins\page_notes\styles\images\footnotes_on.svg" />
+    <Content Include="plugins\page_notes\styles\images\forward.svg" />
+    <Content Include="plugins\page_notes\styles\images\forward_hover.svg" />
+    <Content Include="plugins\page_notes\styles\images\notes_hover.svg" />
+    <Content Include="plugins\page_notes\styles\images\notes_off.svg" />
+    <Content Include="plugins\page_notes\styles\images\notes_on.svg" />
+    <Content Include="plugins\sitemap\styles\images\flow.svg" />
+    <Content Include="plugins\sitemap\styles\images\folder_closed.svg" />
+    <Content Include="plugins\sitemap\styles\images\folder_open.svg" />
+    <Content Include="plugins\sitemap\styles\images\hotspots.svg" />
+    <Content Include="plugins\sitemap\styles\images\hotspots_hover.svg" />
+    <Content Include="plugins\sitemap\styles\images\hotspots_on.svg" />
+    <Content Include="plugins\sitemap\styles\images\note.svg" />
+    <Content Include="plugins\sitemap\styles\images\page.svg" />
+    <Content Include="plugins\sitemap\styles\images\share.svg" />
+    <Content Include="plugins\sitemap\styles\images\share_hover.svg" />
+    <Content Include="plugins\sitemap\styles\images\share_on.svg" />
+    <Content Include="plugins\sitemap\styles\images\sitemap_hover.svg" />
+    <Content Include="plugins\sitemap\styles\images\sitemap_off.svg" />
+    <Content Include="plugins\sitemap\styles\images\sitemap_on.svg" />
+    <Content Include="plugins\sitemap\styles\images\views.svg" />
+    <Content Include="plugins\sitemap\styles\images\views_hover.svg" />
+    <Content Include="plugins\sitemap\styles\images\views_on.svg" />
+    <Content Include="resources\chrome\axure-chrome-extension.crx" />
+    <Content Include="resources\images\close.svg" />
+    <Content Include="resources\images\close_hover.svg" />
+    <Content Include="resources\images\divider.svg" />
+    <Content Include="resources\images\expand.svg" />
+    <Content Include="resources\images\expand_hover.svg" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="images\公司页面\" />
+    <Folder Include="images\我的蚂蚁\" />
+    <Folder Include="images\注册\" />
+    <Folder Include="obj\Debug\TempPE\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{ff8c92a2-2584-4a85-aab2-1f68df2f3a0e}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Models\Models.csproj">
+      <Project>{9431478a-ffdb-4357-8989-bf8f4b1ed6dc}</Project>
+      <Name>Models</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:51488/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

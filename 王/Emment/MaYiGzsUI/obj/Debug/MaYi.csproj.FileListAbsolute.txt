@@ -1,0 +1,13 @@
+C:\Users\RUOK\Desktop\MaYi\MaYi\bin\MaYi.dll
+C:\Users\RUOK\Desktop\MaYi\MaYi\bin\MaYi.pdb
+C:\Users\RUOK\Desktop\MaYi\MaYi\obj\Debug\MaYi.dll
+C:\Users\RUOK\Desktop\MaYi\MaYi\obj\Debug\MaYi.pdb
+E:\1702闫蕊\卓越项目\MaYi\MaYi\bin\MaYi.dll
+E:\1702闫蕊\卓越项目\MaYi\MaYi\bin\MaYi.pdb
+E:\1702闫蕊\卓越项目\MaYi\MaYi\obj\Debug\MaYi.dll
+E:\1702闫蕊\卓越项目\MaYi\MaYi\obj\Debug\MaYi.pdb
+F:\蚂蚁工作室\项目源码\MaYi\MaYi\bin\MaYi.dll
+F:\蚂蚁工作室\项目源码\MaYi\MaYi\bin\MaYi.pdb
+F:\蚂蚁工作室\项目源码\MaYi\MaYi\obj\Debug\MaYi.csprojResolveAssemblyReference.cache
+F:\蚂蚁工作室\项目源码\MaYi\MaYi\obj\Debug\MaYi.dll
+F:\蚂蚁工作室\项目源码\MaYi\MaYi\obj\Debug\MaYi.pdb
